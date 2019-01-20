@@ -1,0 +1,35 @@
+<button class="btn btn-block btn-outline-primary p-2" style="font-size:30px;" routerLink="/">
+  <<==</button> <div class="container">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>
+            <h4>Descripcion</h4>
+          </th>
+          <th>
+            <h4>Precio</h4>
+          </th>
+          <th>
+            <h4>Fecha</h4>
+          </th>
+          <th>
+            <h4>Mes</h4>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="input" *ngFor="let producto of productos" app-item [producto]="producto">
+
+
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>TOTAL: </th>
+          <th></th>
+          <th></th>
+          <th class="text-info">
+            <h5>$ {{ precio[0] }}</h5>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+    </div>

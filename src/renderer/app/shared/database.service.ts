@@ -39,22 +39,31 @@ export class Database {
 
     findAll() {
         return new Promise((resolve, reject) => {
-            return this.db.find({}, ((err:any, items:any) => {
+            return this.db.find({},{ projection: { _id: 0 } }, ((err:any, items:any) => {
                 if ( err )
                 {
                     reject(err);
                 }
                 else
                 {
+                    
                     resolve(items);
                 }
             }));
         })
     }
 
-    remove(id:any) {
+    remove(idrow: string, month: string, nombre: string, precio: string, fecha: string) {
+        let obj = {
+            idrow: idrow,
+            mes: month,
+            nombre: nombre,
+            precio: precio,
+            fecha: fecha
+        }
+
         return new Promise((resolve, reject) => {
-            return this.db.remove({ _id: id }, {}, ((err:any, numRemoved:any) => {
+            return this.db.remove(obj, ((err:any, numRemoved:any) => {
                 if ( err )
                 {
                     reject(err);
@@ -67,9 +76,9 @@ export class Database {
         })
     }
 
-    findPrice(filter:any) {
+    findMonth(filter:any) {
         return new Promise((resolve, reject) => {
-            return this.db.find({price:filter}, ((err:any, items:any) => {
+            return this.db.find({mes:filter},{ projection: { _id: 0 } }, ((err:any, items:any) => {
                 if ( err )
                 {
                     reject(err);
