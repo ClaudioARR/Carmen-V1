@@ -1,7 +1,6 @@
-# Electron-testing-app-2
+# Carmen-V1
 
-## Requirements
-* [+ Node:6.5.0](https://nodejs.org/en/)
+This is the other version of https://github.com/ClaudioARR/FirstProyectElectron, this time made with angular. If you have the question "why Carmen?", nothing special, i like that name for this app. idk why but i like it.
 
 ## Usage
 ```bash
@@ -21,5 +20,5 @@ npm run package-w
 
 ###### Made with the purpose of learning
 
-Thanks to [hawok](https://github.com/hawok) for the [starter repository](https://github.com/hawok/electron-angular2)
-"# Carmen-V1" 
+Thanks to [rodrigoelicer](https://github.com/rodrigoelicer) for the [starter repository](https://github.com/rodrigoelicer/electron-angular2-nedb/tree/master/src)
+
