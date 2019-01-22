@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { removeITEM, DELETEPRODUCTO, setACTUALIZAR, ACTUALIZAR, cleanPRODUCTOS, setPRODUCTOS, PRECIO } from '../../helpers/Producto';
+import { removeITEM, DELETEPRODUCTO, PRECIO } from '../../helpers/Producto';
 import { Database } from '../../shared/database.service';
-import { MONTHCARD } from '../../helpers/Date';
 
 @Component({
   selector: '[app-item]',
@@ -17,14 +16,14 @@ export class ItemComponent implements OnInit {
 
   @Input() producto: any;
 
-  removeItem(){
+  removeItem() {
     removeITEM(this.producto.idrow, this.producto.mes);
     this.db.remove(DELETEPRODUCTO.idrow, DELETEPRODUCTO.mes, DELETEPRODUCTO.nombre, DELETEPRODUCTO.precio, DELETEPRODUCTO.fecha);
     PRECIO[0] = PRECIO[0] - parseInt(DELETEPRODUCTO.precio);
-  } 
+  }
 
-  
 
-  
+
+
 
 }

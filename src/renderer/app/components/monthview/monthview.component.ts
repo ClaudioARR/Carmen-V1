@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { MONTHCARD } from '../../helpers/Date';
-import { setPRODUCTOS, PRODUCTOS, PRECIO, ACTUALIZAR, setACTUALIZAR } from '../../helpers/Producto';
+import { MONTHCARD, cleanMONTHSPRICES } from '../../helpers/Date';
+import { setPRODUCTOS, PRODUCTOS, PRECIO } from '../../helpers/Producto';
 import { Database } from '../../shared/database.service';
 
 
@@ -14,6 +14,7 @@ export class MonthviewComponent implements OnInit {
 
   constructor(private db: Database) {
     this.setproductos();
+    cleanMONTHSPRICES();
   }
 
   ngOnInit() {
@@ -32,7 +33,7 @@ export class MonthviewComponent implements OnInit {
     });
   }
 
-  
+
 
 
 

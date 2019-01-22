@@ -11,7 +11,7 @@ import { Database } from '../../shared/database.service';
 })
 export class AddComponent implements OnInit {
 
-  constructor(private db : Database) { }
+  constructor(private db: Database) { }
 
   //---------------------------------------------------------------
 
@@ -19,8 +19,8 @@ export class AddComponent implements OnInit {
     cleanPRODUCTOS();
     ((document.querySelector('#name') as HTMLInputElement).focus());
   }
-  
-  
+
+
 
   addItem() {
     let name = ((document.querySelector('#name') as HTMLInputElement).value);
@@ -60,6 +60,6 @@ export class AddComponent implements OnInit {
     (document.querySelector('#name') as HTMLInputElement).focus();
   }
 
-  
+
 
 }

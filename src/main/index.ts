@@ -3,10 +3,11 @@ import { app, BrowserWindow } from 'electron'
 let mainWindow:Electron.BrowserWindow
 
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 800, height: 600/*,resizable:false*/})
+  mainWindow = new BrowserWindow({width: 800, height: 600, title: "Carmen"/*,resizable:false*/})
   mainWindow.loadURL(`file://${__dirname}/index.html`)
 
   //mainWindow.webContents.openDevTools()
+  mainWindow.setMenu(null);
 
   mainWindow.on('closed', () => {
     mainWindow = null

@@ -1,13 +1,13 @@
 <div class="container">
   <div class="row">
-    <div class="col-4 p-2" *ngFor="let m of months">
+    <div class="col-4 p-2" *ngFor="let m of months; let i  = index">
       <div class="card border-dark">
         <div class="card-header">{{ year }}</div>
         <div class="card-body">
           <h4 class="card-title" style="text-align:center;">
             <h3 id="m">{{ m }}</h3>
           </h4>
-          <p class="card-text" style="text-align:right;"> * inserte total mes *</p>
+          <p class="card-text" style="text-align:right;">$ {{ monthprices[i] }}</p>
 
           <button class="btn btn-block btn-info" (click)="setMonth(m);" routerLink="/view">VER</button>
 
@@ -15,7 +15,9 @@
       </div>
     </div>
     <div class="col-4 p-2">
-      <button class="btn btn-block btn-outline-info" routerLink="/inform"><h4>Ver Informe</h4></button>
+      <button class="btn btn-block btn-outline-info" routerLink="/inform">
+        <h4>Ver Informe</h4>
+      </button>
     </div>
   </div>
 </div>

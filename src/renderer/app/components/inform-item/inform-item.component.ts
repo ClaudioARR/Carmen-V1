@@ -1,7 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { removeITEM, DELETEPRODUCTO, setACTUALIZAR, ACTUALIZAR, cleanPRODUCTOS, setPRODUCTOS, PRECIO } from '../../helpers/Producto';
-import { Database } from '../../shared/database.service';
-import { MONTHCARD } from '../../helpers/Date';
 
 @Component({
   selector: '[app-inform-item]',
@@ -17,10 +14,10 @@ export class InformitemComponent implements OnInit {
 
   @Input() producto: any;
 
-  
 
-  
 
-  
+
+
+
 
 }
