@@ -14,11 +14,12 @@ export class InformviewComponent implements OnInit {
    }
 
   ngOnInit() {
-    console.log(this.productos);
+    console.log(this.productos);    
   }
 
   productos = PRODUCTOS;
   precio = PRECIO;
+
 
   setproductos(){
     var promise = Promise.resolve(this.db.findAll());

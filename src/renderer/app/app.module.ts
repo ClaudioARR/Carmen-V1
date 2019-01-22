@@ -8,6 +8,7 @@ import { InformviewComponent } from './components/informview/informview.componen
 import { MonthscardComponent } from './components/monthscard/monthscard.component';
 import { MonthviewComponent } from './components/monthview/monthview.component';
 import { ItemComponent } from './components/item/item.component';
+import { InformitemComponent } from './components/inform-item/inform-item.component';
 import { Database } from './shared/database.service';
 import { LinkService } from './shared/link.service';
 
@@ -19,6 +20,7 @@ import { LinkService } from './shared/link.service';
     MonthscardComponent,
     MonthviewComponent,
     ItemComponent,
+    InformitemComponent
   ],
   imports: [
     BrowserModule,
