@@ -22,3 +22,7 @@ npm run package-w
 
 Thanks to [rodrigoelicer](https://github.com/rodrigoelicer) for the [starter repository](https://github.com/rodrigoelicer/electron-angular2-nedb/tree/master/src)
 
+## Vulnerabilities
+
+[![Known Vulnerabilities](https://snyk.io/test/github/ClaudioARR/Carmen-V1/badge.svg?targetFile=src%2Fpackage.json)](https://snyk.io/test/github/ClaudioARR/Carmen-V1?targetFile=src%2Fpackage.json)
+

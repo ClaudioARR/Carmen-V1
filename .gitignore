@@ -175,3 +175,4 @@ typings
 /dist
 /dist-app
 database.db
+/release-builds
