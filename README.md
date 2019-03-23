@@ -1,6 +1,6 @@
 # Carmen-V1
 
-This is the other version of https://github.com/ClaudioARR/FirstProyectElectron, this time made with angular. If you have the question "why Carmen?", nothing special, i like that name for this app. idk why but i like it.
+This is the other version of https://github.com/ClaudioARR/FirstProyectElectron, this time made with angular.
 
 ## Usage
 ```bash
